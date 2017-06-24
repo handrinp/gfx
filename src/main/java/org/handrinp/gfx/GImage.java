@@ -27,6 +27,14 @@ public class GImage {
         this(width, height, DEFAULT_IMAGE_NAME);
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
     public void set(int x, int y, int color) {
         image.setRGB(x, height - y - 1, color);
     }
